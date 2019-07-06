@@ -1,0 +1,12 @@
+laptop1: 1
+WRT 300N: 1  ( ethernet1 and fast ethernet 1/0)
+Swithch: 1 2960 
+lalptop2:1 
+
+laptop1-> physical-> off-> WPC300N -> laptop on-> 
+wrt300n-> wireless-> wep-> key-> abcde12345
+wrt300n->gui-> wirless-> network-> router-> save
+
+laptop1-> pc wireless-> configuration 
+
+laptop1 and laptop2 dhcp setup

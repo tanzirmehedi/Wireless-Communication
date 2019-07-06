@@ -1,0 +1,14 @@
+Server : 1
+Pc: 2
+Access point: 1 
+
+Server-> desktop->ip-> 192.168.0.1 -> service-> dhcp-> on -> start ip: 192.168.0.0 -> mask: 255.255.255.0 -> save and exit
+
+then wire connect server to access point
+
+the pc off and configuration 
+
+pc terminal open and check ping 192.168.0.3 
+
+
+

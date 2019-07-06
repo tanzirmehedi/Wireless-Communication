@@ -1,0 +1,31 @@
+en
+conf t
+int f0/0
+no shut
+ip add 10.0.0.1 255.0.0.0
+exit
+ip dhcp pool PHONE
+network 10.0.0.0 255.0.0.0
+default-router 10.0.0.1
+option 150 ip 10.0.0.1
+exit
+telephony-service
+max-ephones 5
+max-dn 5
+ip source-address 10.0.0.1 port 2000
+auto assign 4 to 6
+auto assign 1 to 5
+exit
+ephone-dn 1
+number 0001
+ephone-dn 2
+number 0002
+
+
+
+en
+conf t
+int range f0/1-24
+switchport mode access
+switchport voice vlan 1
+

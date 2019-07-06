@@ -1,0 +1,38 @@
+Router: 1841
+Switch: 2950-24
+Pc: 2
+
+Pc:1 nohing
+pc:2 take wire 2 number and select RS 232 and connect with switch 0/2
+
+     go terminal and press ok
+
+en
+conf
+interface fa0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+
+exit
+line console 0
+password cisco
+login
+exit
+
+line vty 0 2
+transport input telnet
+password cisco
+login
+
+exit
+enable password cisco
+
+
+Now pc1:
+
+set ip 192.168.1.2
+gateway: 192.168.1.1
+
+cmd and telnet 192.168.1.1
+password: cisco
+....en,conf etc
